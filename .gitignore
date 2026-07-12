@@ -1,0 +1,60 @@
+# Secrets and local runtime data
+.env
+.env.*
+!.env.example
+*token*
+*secret*
+*credentials*
+*.key
+*.pem
+config.json
+.auth_session.json
+settings.json
+prompts.db
+*.db-journal
+*.sqlite
+*.sqlite3
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+*.egg-info/
+
+# JavaScript and framework caches
+node_modules/
+.cache/
+.turbo/
+.next/cache/
+
+# Build and release output
+dist/
+build/
+release/
+release-assets/
+target/
+bin/
+obj/
+*.spec
+
+# Logs and temporary files
+logs/
+*.log
+tmp/
+temp/
+*.bak
+*.backup
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.lnk

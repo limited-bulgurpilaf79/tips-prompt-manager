@@ -1,0 +1,22 @@
+[project]
+name = "tips-prompt-manager"
+version = "1.0.0"
+description = "Offline prompt engineering manager for Windows"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "HaoXiang Huang", email = "didadida1688@gmail.com" }
+]
+keywords = ["prompt-engineering", "tkinter", "sqlite", "offline"]
+dependencies = []
+
+[project.urls]
+Homepage = "https://nextweb4.github.io/"
+Repository = "https://github.com/NextWeb4/tips-prompt-manager"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
